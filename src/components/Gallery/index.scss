@@ -1,0 +1,29 @@
+.gallery {
+    display: flex;
+    margin: 0 2rem;
+    max-width: 100%;
+    gap: 2rem;
+  
+    &__col {
+      flex: 25%;
+      max-width: 25%;
+  
+      &--item {
+        width: 100%;
+        border-radius: 5px;
+        height: auto;
+        object-fit: cover;
+        margin-bottom: 0.5rem;
+
+        img {
+            width: 100%;
+        }
+      }
+  
+      &--text {
+        font-size: 0.9rem;
+        color: #555;
+      }
+    }
+  }
+  
