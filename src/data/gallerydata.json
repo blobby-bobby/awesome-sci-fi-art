@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "title": "The Crystal Merchant",
         "author": "Lurk",
         "year": "2019",
@@ -11,6 +12,7 @@
         ]
     },
     {
+        "id": 2,
         "title": "City of the Future",
         "author": "Frank R. Paul",
         "year": "1942",
@@ -24,6 +26,7 @@
         
     },
     {
+        "id": 3,
         "title": "Super Comic Workshop Machine Head vol. 7",
         "author": "Masamune Shirow",
         "year": "1990",
@@ -39,6 +42,7 @@
         
     },
     {
+        "id": 4,
         "title": "Stars aligned",
         "author": "Killian Eng",
         "year": "2021",
@@ -53,6 +57,7 @@
         
     },
     {
+        "id": 5,
         "title": "Omale",
         "author": "Manchu",
         "year": "2012",
@@ -68,8 +73,9 @@
         
     },
     {
-        "title": "Kurt Huggins",
-        "author": "The Watcher",
+        "id": 6,
+        "title": "The Watcher",
+        "author": "Kurt Huggins",
         "year": "?",
         "pathImg": "https://klolianebooks.files.wordpress.com/2018/11/tumblr_nvikn3g3ed1ugu4jfo1_1280.jpg?w=700&h=934&crop=1",
         "pathAuthor": "https://www.kurthuggins.com/",
@@ -85,6 +91,7 @@
         
     },
     {
+        "id": 7,
         "title": "Memories",
         "author": "Katsuhiro Ōtomo",
         "year": "1995",
@@ -100,6 +107,7 @@
         
     },
     {
+        "id": 8,
         "title": "The Nets of Space",
         "author": "Paul Lehr",
         "year": "1969",
@@ -116,6 +124,7 @@
         
     },
     {
+        "id": 9,
         "title": "The Pollinators of Eden",
         "author": "Peter Cross",
         "year": "1978",
@@ -133,6 +142,7 @@
         
     },
     {
+        "id": 10,
         "title": "Starfox - Super Nintendo cover art",
         "author": "Shigeru Miyamoto",
         "year": "1993",
@@ -148,6 +158,7 @@
         
     },
     {
+        "id": 11,
         "title": "Dwellers of the Forbidden City",
         "author": "Erol Otus",
         "year": "1981",
@@ -165,6 +176,7 @@
         
     },
     {
+        "id": 12,
         "title": "House with a View",
         "author": "Jim Warren",
         "year": "1993",
@@ -181,8 +193,9 @@
         
     },
     {
-        "title": "Jacob Janerka",
-        "author": "Paradigm Concept art",
+        "id": 13,
+        "title": "Paradigm Concept art",
+        "author": "Jacob Janerka",
         "year": "2017",
         "pathImg": "https://media.indiedb.com/images/games/1/29/28995/preview.jpg",
         "pathAuthor": "https://www.jacobjanerka.com/",
@@ -198,8 +211,9 @@
         
     },
     {
-        "title": "Moebius",
-        "author": "Eyes of the Cat",
+        "id": 14,
+        "title": "Eyes of the Cat",
+        "author": "Moebius",
         "year": "1985",
         "pathImg": "https://i.redd.it/5gv57bd836u61.jpg",
         "pathAuthor": "https://fr.wikipedia.org/wiki/Jean_Giraud",
@@ -214,6 +228,7 @@
         
     },
     {
+        "id": 15,
         "title": "2001 A Space Odyssey",
         "author": "Robert McCall",
         "year": "1968",
@@ -231,6 +246,7 @@
         
     },
     {
+        "id": 16,
         "title": "Art is Beautiful",
         "author": "Pedro Correa",
         "year": "2021",

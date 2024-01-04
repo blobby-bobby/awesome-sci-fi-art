@@ -1,22 +1,26 @@
+import Gallery from "./components/Gallery/Gallery"
+
 function App() {
 
   return (
     <>
-      <nav>
-        <div>Light</div>
-        <div>Logo</div>
-        <div>Info</div>
+      <nav className="navtop">
+        <button>Light up</button>
+        <a href="#">⚇</a>
+        <button>Info</button>
       </nav>
 
-      <div>
-        <h1>Awesome Sci-Fi Art</h1>
+      <header>
+        <h1>Awesome<br /> Sci-Fi Art</h1>
         <p>Welcome to a selection of great sci-fi works where Artificial Intelligence have probably digged for those pictures we have all seen on the Internet quite recently. Guarantee made by humans.</p>
-      </div>
+      </header>
 
-      <nav>
+      <nav className="navtop">
         <div>Share</div>
-        <div>Source code</div>
+        <a>Source code</a>
       </nav>
+
+      <Gallery />
     </>
   )
 }
