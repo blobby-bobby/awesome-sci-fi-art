@@ -21,6 +21,9 @@ function App() {
       </nav>
 
       <Gallery />
+
+
+      <p>This gallery is not for profit purpose, but to encourage discovery of unique artworks. Please, keep in mind that those pictures are copyrighted, or under license. If you use them on your blog, social media or whatever, be kind, credit the authors.</p>
     </>
   )
 }
