@@ -1,0 +1,251 @@
+[
+    {
+        "title": "The Crystal Merchant",
+        "author": "Lurk",
+        "year": "2019",
+        "pathImg": "https://gallery.rotofugi.com/exhibits/2019-LURK/images/large/12.jpg",
+        "pathAuthor": "https://www.lurkarmy.com/",
+        "tags": [
+            "gouache",
+            "monster"
+        ]
+    },
+    {
+        "title": "City of the Future",
+        "author": "Frank R. Paul",
+        "year": "1942",
+        "pathImg": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81d9jvrg09L._AC_SY879_.jpg",
+        "pathAuthor": "https://fr.wikipedia.org/wiki/Frank_R._Paul",
+        "tags": [
+            "pulp",
+            "future",
+            "city"
+        ]
+        
+    },
+    {
+        "title": "Super Comic Workshop Machine Head vol. 7",
+        "author": "Masamune Shirow",
+        "year": "1990",
+        "pathImg": "https://preview.redd.it/7axepjbp7eu61.jpg?auto=webp&s=c20a77780d9046d6a392d113dc71f5e2ce25ee52",
+        "pathAuthor": "https://fr.wikipedia.org/wiki/Masamune_Shirow",
+        "tags": [
+            "anime",
+            "future",
+            "comics",
+            "machine",
+            "manga"
+        ]
+        
+    },
+    {
+        "title": "Stars aligned",
+        "author": "Killian Eng",
+        "year": "2021",
+        "pathImg": "https://pbs.twimg.com/media/FC5AtMDWUAQN0ma.jpg:large",
+        "pathAuthor": "https://dwdesign.tumblr.com/",
+        "tags": [
+            "space",
+            "landscape",
+            "future",
+            "explore"
+        ]
+        
+    },
+    {
+        "title": "Omale",
+        "author": "Manchu",
+        "year": "2012",
+        "pathImg": "https://1.bp.blogspot.com/-QBwi1VsGJnI/T8zHEEOyb-I/AAAAAAAABio/S6ijzIH-Y28/s1600/Omale%2B2012a.jpg",
+        "pathAuthor": "https://fr.wikipedia.org/wiki/Manchu",
+        "tags": [
+            "spaceship",
+            "landscape",
+            "future",
+            "explore",
+            "architecture"
+        ]
+        
+    },
+    {
+        "title": "Kurt Huggins",
+        "author": "The Watcher",
+        "year": "?",
+        "pathImg": "https://klolianebooks.files.wordpress.com/2018/11/tumblr_nvikn3g3ed1ugu4jfo1_1280.jpg?w=700&h=934&crop=1",
+        "pathAuthor": "https://www.kurthuggins.com/",
+        "tags": [
+            "monster",
+            "landscape",
+            "night",
+            "car",
+            "forest",
+            "eye",
+            "horror"
+        ]
+        
+    },
+    {
+        "title": "Memories",
+        "author": "Katsuhiro Ōtomo",
+        "year": "1995",
+        "pathImg": "https://i.pinimg.com/1200x/56/c3/76/56c3763ff2adf47a7a7e9ae382a60c19.jpg",
+        "pathAuthor": "https://fr.wikipedia.org/wiki/Katsuhiro_%C5%8Ctomo",
+        "tags": [
+            "cyberpunk",
+            "anime",
+            "manga",
+            "future",
+            "machine"
+        ]
+        
+    },
+    {
+        "title": "The Nets of Space",
+        "author": "Paul Lehr",
+        "year": "1969",
+        "pathImg": "https://www.vagabond-des-etoiles.com/wp-content/uploads/2018/03/Science-fiction-Paul-Lehr-1950-5.jpg",
+        "pathAuthor": "https://nl.wikipedia.org/wiki/Paul_Lehr",
+        "tags": [
+            "monster",
+            "space",
+            "giant",
+            "crab",
+            "landscape",
+            "pulp"
+        ]
+        
+    },
+    {
+        "title": "The Pollinators of Eden",
+        "author": "Peter Cross",
+        "year": "1978",
+        "pathImg": "https://pbs.twimg.com/media/FrwKRR1XoAEHCY0?format=jpg&name=medium",
+        "pathAuthor": "https://petercrossart.com/",
+        "tags": [
+            "dandelion",
+            "nature",
+            "flower",
+            "space",
+            "landscape",
+            "fantasy",
+            "surrealism"
+        ]
+        
+    },
+    {
+        "title": "Starfox - Super Nintendo cover art",
+        "author": "Shigeru Miyamoto",
+        "year": "1993",
+        "pathImg": "https://image.jeuxvideo.com/medias-md/150993/1509934717-6794-card.png",
+        "pathAuthor": "https://fr.wikipedia.org/wiki/Shigeru_Miyamoto",
+        "tags": [
+            "video game",
+            "space",
+            "starfox",
+            "puppet",
+            "game"
+        ]
+        
+    },
+    {
+        "title": "Dwellers of the Forbidden City",
+        "author": "Erol Otus",
+        "year": "1981",
+        "pathImg": "https://64.media.tumblr.com/f0b9d7f6230d3c4685dcbc51a8bf90c6/89f0820b4c11b8d3-ee/s1280x1920/588639b1d6c3c17443687d2ec95b4306d552b90d.jpg",
+        "pathAuthor": "https://en.wikipedia.org/wiki/Erol_Otus",
+        "tags": [
+            "frog",
+            "giant",
+            "war",
+            "puppet",
+            "role",
+            "dungeon and dragons",
+            "DnD"
+        ]
+        
+    },
+    {
+        "title": "House with a View",
+        "author": "Jim Warren",
+        "year": "1993",
+        "pathImg": "https://64.media.tumblr.com/7269b33010a7bcafab3f3c53b2d24482/da877c9fac469fcc-99/s2048x3072/83fc929acc695b4999675323b34fc50248b085d1.jpg",
+        "pathAuthor": "https://en.wikipedia.org/wiki/Jim_Warren_(artist)",
+        "tags": [
+            "ocean",
+            "house",
+            "surrealism",
+            "landscape",
+            "book cover",
+            "cover"
+        ]
+        
+    },
+    {
+        "title": "Jacob Janerka",
+        "author": "Paradigm Concept art",
+        "year": "2017",
+        "pathImg": "https://media.indiedb.com/images/games/1/29/28995/preview.jpg",
+        "pathAuthor": "https://www.jacobjanerka.com/",
+        "tags": [
+            "video game",
+            "future",
+            "apocalyptic",
+            "funny",
+            "concept art",
+            "background",
+            "computer"
+        ]
+        
+    },
+    {
+        "title": "Moebius",
+        "author": "Eyes of the Cat",
+        "year": "1985",
+        "pathImg": "https://i.redd.it/5gv57bd836u61.jpg",
+        "pathAuthor": "https://fr.wikipedia.org/wiki/Jean_Giraud",
+        "tags": [
+            "cat",
+            "future",
+            "wall",
+            "apocalyptic",
+            "landcape",
+            "animal"
+        ]
+        
+    },
+    {
+        "title": "2001 A Space Odyssey",
+        "author": "Robert McCall",
+        "year": "1968",
+        "pathImg": "http://www.mccallstudios.com/includes/uploads/2015/10/2001-mccall-studios-1.jpg",
+        "pathAuthor": "https://fr.wikipedia.org/wiki/Robert_McCall_(peintre)",
+        "tags": [
+            "cinema",
+            "future",
+            "space",
+            "spaceship",
+            "cinema",
+            "movie",
+            "Kubrick"
+        ]
+        
+    },
+    {
+        "title": "Art is Beautiful",
+        "author": "Pedro Correa",
+        "year": "2021",
+        "pathImg": "https://cdn.myportfolio.com/737a4c37a32689ef666204966782f7ee/001bbf9f-b1c1-47ec-a731-e6f3f3dd1e5b_rw_1920.jpg?h=cf642e2c7bc3aecce3286ea63c8c6c40",
+        "pathAuthor": "https://pedrocorrea.com/",
+        "tags": [
+            "space",
+            "eyes",
+            "hand",
+            "planet",
+            "halftone",
+            "comics",
+            "sun",
+            "moon"
+        ]
+        
+    }
+]
