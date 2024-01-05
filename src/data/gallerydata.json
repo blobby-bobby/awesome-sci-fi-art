@@ -143,22 +143,6 @@
     },
     {
         "id": 10,
-        "title": "Starfox - Super Nintendo cover art",
-        "author": "Shigeru Miyamoto",
-        "year": "1993",
-        "pathImg": "https://image.jeuxvideo.com/medias-md/150993/1509934717-6794-card.png",
-        "pathAuthor": "https://fr.wikipedia.org/wiki/Shigeru_Miyamoto",
-        "tags": [
-            "video game",
-            "space",
-            "starfox",
-            "puppet",
-            "game"
-        ]
-        
-    },
-    {
-        "id": 11,
         "title": "Dwellers of the Forbidden City",
         "author": "Erol Otus",
         "year": "1981",
@@ -176,7 +160,7 @@
         
     },
     {
-        "id": 12,
+        "id": 11,
         "title": "House with a View",
         "author": "Jim Warren",
         "year": "1993",
@@ -193,7 +177,7 @@
         
     },
     {
-        "id": 13,
+        "id": 12,
         "title": "Paradigm Concept art",
         "author": "Jacob Janerka",
         "year": "2017",
@@ -211,7 +195,7 @@
         
     },
     {
-        "id": 14,
+        "id": 13,
         "title": "Eyes of the Cat",
         "author": "Moebius",
         "year": "1985",
@@ -228,7 +212,7 @@
         
     },
     {
-        "id": 15,
+        "id": 14,
         "title": "2001 A Space Odyssey",
         "author": "Robert McCall",
         "year": "1968",
@@ -242,6 +226,22 @@
             "cinema",
             "movie",
             "Kubrick"
+        ]
+        
+    },
+    {
+        "id": 15,
+        "title": "Starfox - Super Nintendo cover art",
+        "author": "Shigeru Miyamoto",
+        "year": "1993",
+        "pathImg": "https://image.jeuxvideo.com/medias-md/150993/1509934717-6794-card.png",
+        "pathAuthor": "https://fr.wikipedia.org/wiki/Shigeru_Miyamoto",
+        "tags": [
+            "video game",
+            "space",
+            "starfox",
+            "puppet",
+            "game"
         ]
         
     },
@@ -261,6 +261,55 @@
             "comics",
             "sun",
             "moon"
+        ]
+        
+    },
+    {
+        "id": 17,
+        "title": "Paysage du futur",
+        "author": "Tim Hildebrandt",
+        "year": "?",
+        "pathImg": "http://fantasy.mrugala.net/Tim%20Hildebrandt/Tim%20Hildebrandt%20-%20Paysage%20du%20futur.jpg",
+        "pathAuthor": "https://en.wikipedia.org/wiki/Brothers_Hildebrandt",
+        "tags": [
+            "forest",
+            "future",
+            "landscape",
+            "dome",
+            "robot",
+            "spaceship"
+        ]
+        
+    },
+    {
+        "id": 18,
+        "title": "Galaxy Magazine Cover",
+        "author": "Ed Emshwiller",
+        "year": "1960",
+        "pathImg": "https://64.media.tumblr.com/8724221874237594e653746dbbe04275/tumblr_nzudcdnHDo1qigaa4o8_1280.jpg",
+        "pathAuthor": "https://fr.wikipedia.org/wiki/Ed_Emshwiller",
+        "tags": [
+            "robot",
+            "christmas",
+            "santa",
+            "machine",
+            "computer"
+        ]
+        
+    },
+    {
+        "id": 18,
+        "title": "Cosmic Engineers",
+        "author": "Del Sarte",
+        "year": "1970",
+        "pathImg": "https://64.media.tumblr.com/aaa124f46d05ce143a74df2d798586d7/1604dcb8fade536c-1a/s1280x1920/783845067ec7425f516031b8bc1b62a8406715ee.jpg",
+        "pathAuthor": "https://fr.wikipedia.org/wiki/R%C3%A9trofuturisme",
+        "tags": [
+            "space",
+            "rainbow",
+            "color",
+            "mountains",
+            "spacer"
         ]
         
     }
