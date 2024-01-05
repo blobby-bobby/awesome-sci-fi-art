@@ -11,18 +11,18 @@ const Artwork: FunctionComponent<ArtworkProps> = (props) => {
   return (
     <>
             <div className='img-wrap'>
-              <img src={props.pathImg} alt={props.title} />
-            </div>
+              <div className='img-wrap__overlay'>
+                <div className='description'>
 
-            <div className='description'>
+                <div>
+                  <p>{props.title}</p>
+                  <address className="author">{props.author}</address>
+                </div>
 
-              <div>
-                <p>{props.title}</p>
-                <address className="author">{props.author}</address>
+                <p>{props.year}</p>
+                </div>
               </div>
-              
-              
-              <p>{props.year}</p>
+              <img src={props.pathImg} alt={props.title} />
             </div>
 
               

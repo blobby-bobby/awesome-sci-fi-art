@@ -1,24 +1,23 @@
 import Gallery from "./components/Gallery/Gallery"
+import Heading from "./components/Heading/Heading"
+import { HiOutlineLightBulb, HiOutlineInformationCircle } from "react-icons/hi";
+import { FaTwitter, FaLinkedin } from "react-icons/fa";
 
 function App() {
 
   return (
     <>
-      <nav className="navtop">
-        <div className="nav-block">Light up</div>
-        <a href="#">⚇</a>
-        <div className="nav-block">Info</div>
-      </nav>
+      <div className="nav-block"><HiOutlineLightBulb size={24} /></div>
+      <div className="nav-block right"><HiOutlineInformationCircle size={24} /></div>
 
-      <header>
-        <h1>Awesome<br /> Sci-Fi Art</h1>
-        <p>Welcome to a selection of great sci-fi works where Artificial Intelligence have probably digged for those pictures we have all seen on the Internet quite recently. Guarantee made by humans.</p>
-      </header>
-
-      <nav className="navbottom">
-        <div className="nav-block">Share: <a>1</a> <a>1</a> <a>1</a></div>
-        <a>Source code</a>
-      </nav>
+      <Heading />
+      
+      
+      <div className="nav-block bottom share">Share: 
+        <a><FaTwitter /></a>
+        <a><FaLinkedin /></a>
+      </div>
+      <div className="nav-block bottom right">Made by <a>Bulle</a></div>
 
       <Gallery />
 

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital@1&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
   font-family: 'Space Mono', monospace;
@@ -21,7 +21,7 @@ body {
   display: flex;
   place-items: center;
   min-height: 100vh;
-  width: 100%;
+  width: 100vw;
 }
 
 * {
@@ -29,77 +29,58 @@ body {
   box-sizing: border-box;
 }
 
-header {
-  max-width: 900px;
-  margin: 6rem auto;
-  text-align: center;
-  min-height: 50vh;
-
-  p {
-    font-family: 'IBM Plex Serif', serif;
-    font-variant: italic;
-    font-size: 2rem;
-  }
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 3rem;
-  width: 100%;
-}
-
-.navtop, .navbottom {
-  position: fixed;
-}
-
-.navtop {
-  top: 0;
-}
-
-.navbottom {
-  bottom: 0;
-}
-
-h1 {
-  font-size: 7em;
-  line-height: 1;
-  font-style: italic;
-  font-weight: 700;
-  text-transform: uppercase;
-  transform: skewY(-6deg);
-  margin-bottom: 4rem;
-  text-shadow: 5px 5px rgba(94, 238, 81, 0.65);
-}
 
 .nav-block {
   border-radius: 20px;
+  height: 50px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
+  padding: 0.6em 1em;
   background-color: #1F1F1F;
   cursor: pointer;
-  transition: border-color 0.25s;
-  box-shadow: 0 11px 30px rgba(31,31,31,.2);
+  box-shadow: 0 11px 30px rgba(31,31,31,.5);
+  margin: 2rem;
+  min-width: 50px;
+  width: fit-content;
+  position: fixed;
+  z-index: 5;
+
 }
 
-// @media (prefers-color-scheme: light) {
-//   :root {
-//     color: #213547;
-//     background-color: #ffffff;
-//   }
-//   a:hover {
-//     color: #747bff;
-//   }
-//   button {
-//     background-color: #f9f9f9;
-//   }
-// }
+.right {
+  right: 0;
+}
 
-.intentions {
-  font-size: 4.5rem;
-  font-family: 'IBM Plex Serif', serif;
-  font-variant: italic;
+.bottom {
+  bottom: 0;
+}
+
+
+
+a {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.share {
+  display: flex;
+  gap: .2rem;
+  align-items: center;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #323232;
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    padding: .4rem;
+    transition: all .3s ease;
+
+    &:hover {
+      background-color: #5EEE51;
+      color: #1F1F1F;
+    }
+  }
 }
