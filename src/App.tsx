@@ -17,7 +17,7 @@ function App() {
         <a><FaTwitter /></a>
         <a><FaLinkedin /></a>
       </div>
-      <div className="nav-block bottom right">Made by <a>Bulle</a></div>
+      <div className="nav-block bottom right">Made by <a href="https://github.com/blobby-bobby" target="_blank" rel="noopener noreferrer">Bulle</a></div>
 
       <Gallery />
 
