@@ -18,11 +18,9 @@ const Gallery: FunctionComponent = () => {
     <section className="gallery">
         
     {columns.map((column, index) => (
-    <div className="gallery__col" key={index}>
+    <div className="column" key={index}>
       {column.map((img) => (
-        <div className="gallery__col--item" key={img.id}>
-          <Artwork {...img} />
-          </div>
+          <Artwork {...img} key={img.id} />
       ))}
     </div>
   ))}

@@ -1,32 +1,35 @@
 import { FunctionComponent } from 'react'
+import "./styles.scss"
 
 interface ArtworkProps {
     title: string,
     author: string,
     year: string,
-    pathImg: string
+    pathImg: string,
 }
 
 const Artwork: FunctionComponent<ArtworkProps> = (props) => {
   return (
-    <>
-            <div className='img-wrap'>
-              <div className='img-wrap__overlay'>
+    <div className='column__item'>
+            
+              <div className='overlay'>
+                {/* Description */}
                 <div className='description'>
+                  <div>
+                    <p>{props.title}</p>
+                    <address className="author">{props.author}</address>
+                  
+                {/* MORE BUTTON */}
+                  </div>
 
-                <div>
-                  <p>{props.title}</p>
-                  <address className="author">{props.author}</address>
-                </div>
-
-                <p>{props.year}</p>
+                  <p>{props.year}</p>
                 </div>
               </div>
               <img src={props.pathImg} alt={props.title} />
-            </div>
+            
 
               
-    </>
+    </div>
   )
 }
 
