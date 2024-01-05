@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react"
 import Artwork from "./Artwork"
 import data from "../../data/gallerydata.json"
-import "./index.scss"
+import "./styles.scss"
 
 const Gallery: FunctionComponent = () => {
 

@@ -5,9 +5,9 @@ function App() {
   return (
     <>
       <nav className="navtop">
-        <button>Light up</button>
+        <div className="nav-block">Light up</div>
         <a href="#">⚇</a>
-        <button>Info</button>
+        <div className="nav-block">Info</div>
       </nav>
 
       <header>
@@ -15,15 +15,17 @@ function App() {
         <p>Welcome to a selection of great sci-fi works where Artificial Intelligence have probably digged for those pictures we have all seen on the Internet quite recently. Guarantee made by humans.</p>
       </header>
 
-      <nav className="navtop">
-        <div>Share</div>
+      <nav className="navbottom">
+        <div className="nav-block">Share: <a>1</a> <a>1</a> <a>1</a></div>
         <a>Source code</a>
       </nav>
 
       <Gallery />
 
 
-      <p>This gallery is not for profit purpose, but to encourage discovery of unique artworks. Please, keep in mind that those pictures are copyrighted, or under license. If you use them on your blog, social media or whatever, be kind, credit the authors.</p>
+      {/* <section>
+        <p className="intentions">This gallery is not for profit purpose, but to encourage discovery of unique artworks. Please, keep in mind that those pictures are copyrighted, or under license. If you use them on your blog, social media or whatever, be kind, credit the authors.</p>
+      </section> */}
     </>
   )
 }
