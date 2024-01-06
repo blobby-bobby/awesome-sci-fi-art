@@ -15,7 +15,7 @@ const Gallery: FunctionComponent = () => {
     ];
 
   return (
-    <section className="gallery">
+  <section className="gallery">
         
     {columns.map((column, index) => (
     <div className="column" key={index}>
