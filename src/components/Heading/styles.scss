@@ -1,0 +1,49 @@
+@import '../../index.scss';
+
+.head-block {
+  position: fixed;
+  top: 0;
+  width: 50vw;
+  z-index: 3;
+  left: 25vw;
+  margin: auto;
+  text-align: center;
+  min-height: 50vh;
+  border-radius: 0 0 6px 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+
+  .dark {
+    @include dark-theme;
+  }
+
+  .light {
+    @include light-theme;
+  }
+
+  p {
+    font-style: italic;
+    font-size: 1.25rem;
+    margin: 1rem 2rem;
+  } 
+}
+
+h1 {
+  font-size: 6vw;
+  line-height: 1;
+  font-style: italic;
+  font-weight: 700;
+  text-transform: uppercase;
+  transform: skewY(-6deg);
+  margin-bottom: 3rem;
+  text-shadow: 5px 5px rgba(94, 238, 81, 0.65);
+}
+
+@media (max-width: 768px) {
+  .head-block {
+    width: 100vw;
+    left: 0;
+  }
+}
