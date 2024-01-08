@@ -1,7 +1,17 @@
+@import "../../index.scss";
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
     width: 99vw;
+
+    .dark {
+      @include dark-theme;
+    }
+
+    .light {
+      @include light-theme;
+    }
 }
 
 .column {

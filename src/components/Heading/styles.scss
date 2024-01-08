@@ -22,7 +22,7 @@ header {
   transform: translateY(2rem);
   border-radius: 25px;
   box-shadow: 0 11px 30px rgba(31,31,31,.5);
-  transition: all 0.4s ease;
+  transition: width .5s ease, height .6s ease, padding .4s ease, transform .4s ease;
 
   &__icon {
     display: flex;
@@ -33,7 +33,6 @@ header {
   }
 
   &__drop {
-    opacity: 1;
     overflow: hidden;
     width: 600px;
   }
@@ -65,7 +64,7 @@ header {
 
 
 h1 {
-  font-size: 6vw;
+  font-size: 5vw;
   line-height: 1;
   font-style: italic;
   font-weight: 700;

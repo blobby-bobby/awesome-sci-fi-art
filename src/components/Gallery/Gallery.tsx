@@ -2,6 +2,7 @@ import { FunctionComponent } from "react"
 import Artwork from "./Artwork"
 import data from "../../data/gallerydata.json"
 import "./styles.scss"
+import { useTheme } from "../../contexts/ThemeContext"
 
 const Gallery: FunctionComponent = () => {
 
@@ -14,11 +15,13 @@ const Gallery: FunctionComponent = () => {
     
     ];
 
+    const { theme } = useTheme();
+
   return (
-  <section className="gallery">
+  <section className={`gallery ${theme}`}>
         
     {columns.map((column, index) => (
-    <div className="column" key={index}>
+    <div className={`column ${index % 2 === 1 ? "odd" : "even"}`} key={index}>
       {column.map((img) => (
           <Artwork {...img} key={img.id} />
       ))}
