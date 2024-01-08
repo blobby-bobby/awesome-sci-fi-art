@@ -10,11 +10,11 @@ interface ArtworkProps {
 
 const Artwork: FunctionComponent<ArtworkProps> = (props) => {
   return (
-    <div className='column__item'>
+    <figure className='column__item'>
             
               <div className='overlay'>
                 {/* Description */}
-                <div className='description'>
+                <figcaption className='description'>
                   <div>
                     <p>{props.title}</p>
                     <address className="author">{props.author}</address>
@@ -23,13 +23,13 @@ const Artwork: FunctionComponent<ArtworkProps> = (props) => {
                   </div>
 
                   <p>{props.year}</p>
-                </div>
+                </figcaption>
               </div>
               <img src={props.pathImg} alt={props.title} />
             
 
               
-    </div>
+    </figure>
   )
 }
 

@@ -1,0 +1,31 @@
+@import '../../index.scss';
+
+.menu-right {
+    position: fixed;
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(5, 5, 5, 0.8);
+    display: flex;
+    justify-content: end;
+
+    &__container {
+        width: 50%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding: 6rem 2rem;
+
+        &--scrollable-text {
+            font-style: italic;
+            font-size: 3rem;
+        }
+    }
+
+    .dark {
+        @include dark-theme;
+      }
+    
+    .light {
+        @include light-theme;
+    }
+}
