@@ -1,12 +1,12 @@
 // ThemeContext.tsx
-import React, { createContext, useState, useContext, FunctionComponent } from 'react';
+import { createContext, useState, useContext, FunctionComponent, SetStateAction, Dispatch, ReactNode } from 'react';
 
 export interface ThemeContextType {
   theme: string;
-  setTheme: React.Dispatch<React.SetStateAction<string>>;
+  setTheme: Dispatch<SetStateAction<string>>;
 }
 interface ThemeProviderProps {
-    children: React.ReactNode; // Ajoutez cette ligne pour indiquer que ThemeProvider a la propriété children
+    children: ReactNode;
 }
 
 export const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
