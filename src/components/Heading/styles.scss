@@ -21,7 +21,7 @@ header {
   overflow: hidden;
   transform: translateY(2rem);
   border-radius: 25px;
-  box-shadow: 0 11px 30px transparent;
+  box-shadow: 0 11px 30px rgba(31,31,31,.5);
   transition: all 0.4s ease;
 
   &__icon {
@@ -59,7 +59,7 @@ header {
     padding: 2rem;
     border-radius: 0 0 6px 6px;
     width: 100%;
-    box-shadow: 0 11px 30px rgba(31,31,31,.5);
+    box-shadow: 0 11px 30px transparent;
   }
 }
 
@@ -77,8 +77,32 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  .head-block {
-    width: 100vw;
+  
+  header {
     left: 0;
+    width: 100%;
+  }
+
+  .head-block {
+    &__drop {
+      width: 100%;
+    }
+
+    &.expand {
+      width: 100vw;
+    }
+  }
+}
+
+@media (max-width: 982px) {
+  header {
+    left: 15vw;
+    width: 70vw;
+  }
+
+  .head-block {
+    &__drop {
+      width: 500px;
+    }
   }
 }
