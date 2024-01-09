@@ -1,15 +1,16 @@
 @import "../../index.scss";
 
-.gallery {
+main {
     display: flex;
     flex-wrap: wrap;
-    width: 99vw;
+    align-self: center;
+    transition: color 0.3s ease, background-color 0.6s ease;
 
-    .dark {
+    &.dark {
       @include dark-theme;
     }
-
-    .light {
+  
+    &.light {
       @include light-theme;
     }
 }
@@ -18,10 +19,14 @@
       flex: 25%;
       max-width: 25%;
       padding: 0 1rem;
+      transition: transform 0.2s ease;
+      display: flex;
+      flex-direction: column;
 
-      &:nth-child(even) {
-        align-self: flex-start;
-      }
+      // &.reversed {
+      //     transform: translateY(-50%);
+      // }
+
 
       &__item {
         width: 100%;
@@ -92,11 +97,11 @@
       flex: 50%;
       max-width: 50%;
     }
-  }
+}
   
-  @media (max-width: 768px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
+// @media (max-width: 768px) {
+//   .column {
+//     flex: 100%;
+//     max-width: 100%;
+//   }
+// }

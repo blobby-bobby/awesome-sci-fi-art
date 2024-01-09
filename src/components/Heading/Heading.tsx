@@ -6,7 +6,7 @@ import logoTemp from "../../assets/favicon.png"
 const Heading = () => {
 
   const { theme } = useTheme();
-  const [expand, isExpanded] = useState<boolean>(true)
+  const [expand, isExpanded] = useState<boolean>(false)
 
   return (
         <header>

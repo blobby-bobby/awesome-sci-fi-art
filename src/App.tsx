@@ -16,7 +16,7 @@ function App() {
   const [IsOpenMenu, setIsOpenMenu] = useState<boolean>(false)
 
   return (
-      <div className={`app ${theme}`}>
+      <div>
         {/* Theme button */}
         <div className={`nav-block ${theme}`} onClick={toggleTheme}>
           {theme === 'dark' ? <HiOutlineSun size={24} /> : <HiOutlineSparkles size={24} /> }

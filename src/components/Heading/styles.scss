@@ -37,12 +37,14 @@ header {
     width: 600px;
   }
 
-  .dark {
+  &.dark {
     @include dark-theme;
+    transition: color .3s ease, background-color .5s ease;
   }
 
-  .light {
+  &.light {
     @include light-theme;
+    transition: color .3s ease, background-color .5s ease;
   }
 
   p {
@@ -78,7 +80,7 @@ h1 {
 @media (max-width: 768px) {
   
   header {
-    left: 0;
+    left: 0vw;
     width: 100%;
   }
 
@@ -93,7 +95,7 @@ h1 {
   }
 }
 
-@media (max-width: 982px) {
+@media (min-width: 769px) and (max-width: 982px) {
   header {
     left: 15vw;
     width: 70vw;

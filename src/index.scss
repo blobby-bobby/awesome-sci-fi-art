@@ -25,27 +25,15 @@
   background-color: var(--grey900);
 }
 
-.app {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  width: 100vw;
-  overflow-x: hidden;
-
-  .dark {
-    @include dark-theme;
-  }
-
-  .light {
-    @include light-theme;
-  }
-}
-
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @mixin button-style {
@@ -57,7 +45,6 @@
   padding: 0.6em 1em;
   cursor: pointer;
   box-shadow: 0 11px 30px rgba(31,31,31,.5);
-  transition: color 0.3s ease, background-color 0.6s ease;
 }
 
 
@@ -68,12 +55,13 @@
   min-width: 50px;
   width: fit-content;
   @include button-style;
+  transition: color 0.3s ease, background-color 0.6s ease;
 
-  .dark {
+  &.dark {
     @include dark-theme;
   }
 
-  .light {
+  &.light {
     @include light-theme;
   }
 }

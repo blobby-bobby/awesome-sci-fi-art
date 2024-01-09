@@ -231,22 +231,6 @@
     },
     {
         "id": 15,
-        "title": "Starfox - Super Nintendo cover art",
-        "author": "Shigeru Miyamoto",
-        "year": "1993",
-        "pathImg": "https://image.jeuxvideo.com/medias-md/150993/1509934717-6794-card.png",
-        "pathAuthor": "https://fr.wikipedia.org/wiki/Shigeru_Miyamoto",
-        "tags": [
-            "video game",
-            "space",
-            "starfox",
-            "puppet",
-            "game"
-        ]
-        
-    },
-    {
-        "id": 16,
         "title": "Art is Beautiful",
         "author": "Pedro Correa",
         "year": "2021",
@@ -261,6 +245,22 @@
             "comics",
             "sun",
             "moon"
+        ]
+        
+    },
+    {
+        "id": 16,
+        "title": "Starfox - Super Nintendo cover art",
+        "author": "Shigeru Miyamoto",
+        "year": "1993",
+        "pathImg": "https://image.jeuxvideo.com/medias-md/150993/1509934717-6794-card.png",
+        "pathAuthor": "https://fr.wikipedia.org/wiki/Shigeru_Miyamoto",
+        "tags": [
+            "video game",
+            "space",
+            "starfox",
+            "puppet",
+            "game"
         ]
         
     },
@@ -310,6 +310,23 @@
             "color",
             "mountains",
             "spacer"
+        ]
+        
+    },
+    {
+        "id": 20,
+        "title": "Florania",
+        "author": "Thomas Easton",
+        "year": "1970",
+        "pathImg": "https://purplewoods.files.wordpress.com/2015/07/thomas-easton-florania.jpg?w=2000&h=&crop=1",
+        "pathAuthor": "https://www.instagram.com/thomeaston/?hl=fr",
+        "tags": [
+            "collage",
+            "retro",
+            "retrofuturism",
+            "mountains",
+            "lake",
+            "flowers"
         ]
         
     }
