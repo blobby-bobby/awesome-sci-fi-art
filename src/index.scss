@@ -35,6 +35,10 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  height: 100vh;
+  overscroll-behavior: none;
+}
 
 @mixin button-style {
   display: flex;

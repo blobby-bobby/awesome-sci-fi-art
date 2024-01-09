@@ -22,7 +22,7 @@ header {
   transform: translateY(2rem);
   border-radius: 25px;
   box-shadow: 0 11px 30px rgba(31,31,31,.5);
-  transition: width .5s ease, height .6s ease, padding .4s ease, transform .4s ease;
+  transition: width .5s ease, height .4s ease, padding .2s ease, transform .4s ease ,color .3s ease, background-color .5s ease;
 
   &__icon {
     display: flex;
@@ -39,12 +39,10 @@ header {
 
   &.dark {
     @include dark-theme;
-    transition: color .3s ease, background-color .5s ease;
   }
 
   &.light {
     @include light-theme;
-    transition: color .3s ease, background-color .5s ease;
   }
 
   p {

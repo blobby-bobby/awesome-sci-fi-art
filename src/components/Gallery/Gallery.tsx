@@ -5,14 +5,14 @@ import "./styles.scss";
 import { useTheme } from "../../contexts/ThemeContext";
 
 const Gallery: FunctionComponent = () => {
-  // 4 columns
-  const columnSize = Math.ceil(data.length / 4);
+  // Make the columns
+  const columnSize = Math.ceil(data.length / 3);
   const columns = [
     data.slice(0, columnSize),
     data.slice(columnSize, columnSize * 2),
-    data.slice(columnSize * 2, columnSize * 3),
-    data.slice(columnSize * 3),
+    data.slice(columnSize * 2),
   ];
+  
 
   // Theme
   const { theme } = useTheme();
