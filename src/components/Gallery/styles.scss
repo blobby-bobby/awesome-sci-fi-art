@@ -45,7 +45,7 @@
   transition: all .5s ease;
   overflow: hidden;
   border-radius: 6px;
-  max-height: 600px;
+  max-height: 800px;
   display: flex;
   place-items: center;
   position: relative;
@@ -59,23 +59,23 @@
         display: flex;
         opacity: 0;
         transition: all .6s ease;
-
-          .description {
-            align-self: flex-end;
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
-            padding: 1rem;
-            transform: translateY(20px);
-            transition: all .6s ease;
-            color: var(--cream100);
-
-            p {
-                font-weight: 700;
-                text-transform: uppercase;
-            }
-        }
       }
+
+      figcaption {
+        align-self: flex-end;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 1rem;
+        transform: translateY(20px);
+        transition: all .6s ease;
+        color: var(--cream100);
+
+        p {
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
 
       img {
           transition: all .35s ease;
@@ -93,7 +93,7 @@
     &:hover .overlay {
       opacity: 1;
     }
-    &:hover .description {
+    &:hover figcaption {
       transform: translateY(0px);
     }
 }
@@ -126,8 +126,16 @@
       }
       &:nth-child(2) {
         left: 0;
+      }
     }
+  }
+  .gall-item {
+    .overlay {
+      opacity: 1;
     }
 
+    figcaption {
+      transform: translateY(0px)
+    }
   }
 }

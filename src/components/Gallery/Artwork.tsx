@@ -14,7 +14,7 @@ const Artwork: FunctionComponent<ArtworkProps> = (props) => {
             
               <div className='overlay'>
                 {/* Description */}
-                <figcaption className='description'>
+                <figcaption>
                   <div>
                     <p>{props.title}</p>
                     <address className="author">{props.author}</address>
