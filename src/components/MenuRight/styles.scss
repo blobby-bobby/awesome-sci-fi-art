@@ -8,16 +8,18 @@
     background-color: rgba(5, 5, 5, 0.8);
     display: flex;
     justify-content: end;
+    // opacity: 1;
+    // transition: opacity .3s ease;
 
     &__container {
-        width: 50%;
+        width: 60vw;
         overflow-y: scroll;
         overflow-x: hidden;
         padding: 6rem 2rem;
 
-        &--scrollable-text {
+        p {
             font-style: italic;
-            font-size: 3rem;
+            margin-bottom: 2rem
         }
     }
 

@@ -11,7 +11,7 @@ const Heading = () => {
   return (
         <header>
           
-          <div className={`head-block ${theme} ${expand ? "expand" : ""} `} onClick={() => isExpanded(!expand)}>
+          <div className={`head-block ${theme} ${expand ? "expand" : "collapse"}`} onClick={() => isExpanded(!expand)}>
 
               <img src={logoTemp} height={30} alt="Awesome Scifi Art" className='head-block__icon' />
 

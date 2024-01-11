@@ -12,28 +12,58 @@ const Gallery: FunctionComponent = () => {
     data.slice(columnSize, columnSize * 2),
     data.slice(columnSize * 2),
   ];
-  
+
 
   // Theme
   const { theme } = useTheme();
 
-  // Scroll effect
-  useEffect(() => { }, []);
+  const updatePositions = (scrollPos:number)=>{
+    const col = document.getElementsByClassName('column__rail') as HTMLCollectionOf<HTMLElement>;
+    
+    for(let i = 0; i < col.length; i++){
+      if(i % 2 === 0){
+        col[i].style.bottom = scrollPos+"px";
+      }else{
+        col[i].style.top = scrollPos+"px";
+      }
+    }
+  }
+
+  const handleScroll = () => {
+    if(document.documentElement.clientWidth > 576) {
+      updatePositions(-window.scrollY);
+    }
+  }
+
+  useEffect(() => {
+
+    window.addEventListener('scroll', handleScroll);
+  
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    }
+  }, [])
 
   return (
-    <main className={`${theme}`}>
+    <>
+    <div className={`columns ${theme}`}>
         {columns.map((column, index) => (
           <div
-            className={`column ${index % 2 === 1 ? "reversed" : ""}`}
+            className="column"
             key={index}
             
           >
-            {column.map((img) => (
-              <Artwork {...img} key={img.id} />
-            ))}
+            <div className="column__rail">
+              {column.map((img) => (
+                
+                  <Artwork {...img} key={img.id} />
+                
+              ))}
+            </div>
           </div>
         ))}
-    </main>
+    </div>
+    </>
   );
 };
 

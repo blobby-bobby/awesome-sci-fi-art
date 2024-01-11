@@ -32,12 +32,9 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
 body {
-  height: 100vh;
   overscroll-behavior: none;
+  overflow-x: hidden;
 }
 
 @mixin button-style {
@@ -50,7 +47,6 @@ body {
   cursor: pointer;
   box-shadow: 0 11px 30px rgba(31,31,31,.5);
 }
-
 
 .nav-block {
   position: fixed;
@@ -104,4 +100,8 @@ a {
       background-color: var(--green500);
       color: var(--grey800);
     }
+}
+
+h2 {
+  margin: 2rem 0;
 }

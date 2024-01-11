@@ -1,10 +1,10 @@
 @import "../../index.scss";
 
-main {
-    display: flex;
-    flex-wrap: wrap;
+.columns {
     transition: color 0.3s ease, background-color 0.6s ease;
-    overflow-y: hidden;
+    overflow: hidden;
+    height: 3300px;
+    width: 100dvw;
 
     &.dark {
       @include dark-theme;
@@ -16,31 +16,29 @@ main {
 }
 
 .column {
-      flex: 33%;
-      width: 33%;
-      padding: 0 1rem;
-      transition: transform 0.2s ease;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      overflow-y: hidden;
+      width: calc(100vw / 3);
+      position: fixed;
+      height: 100%;
 
-      &.reversed {
-          flex-direction: column-reverse;
-          animation: adjust-position linear forwards;
-          animation-timeline: scroll(root block);
+      &:last-child {
+        right: 0;
       }
-       /* Set up Animation */
-    @keyframes adjust-position {
-      from {
-          transform: translateY(calc(-100% + 100vh));
+
+      &:nth-child(2) {
+          left: calc(100vw / 3);
       }
-      to {
-          transform: translateY(calc(100% - 100vh));
+
+      &__rail {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-content: center;
+        margin: 1rem;
+        height: 3300px;
       }
-  }
+
       &__item {
-        width: 100%;
         height: auto;
         object-fit: cover;
         margin: 1rem 0;
@@ -51,7 +49,6 @@ main {
         display: flex;
         place-items: center;
         position: relative;
-
 
             .overlay {
               position: absolute;
@@ -101,23 +98,27 @@ main {
           }
         }
       }
-
   
-// @media (max-width: 1200px) {
-//     .column {
-//       flex: 50%;
-//       max-width: 50%;
-//     }
-// }
-  
-@media (max-width: 768px) {
-  .column {
-    flex: 100%;
-    width: 100%;
+@media (max-width: 576px) {
+  .columns {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: fit-content;
+    min-height: 100vh;
 
-    &.reversed {
-      animation: none;
-      animation-timeline: none;
+    .column {
+      position: relative;
+      width: 100%;
+
+      &__rail {
+        position: initial;
+        height: fit-content;
+      }
+      &:nth-child(2) {
+        left: 0;
     }
+    }
+
   }
 }
