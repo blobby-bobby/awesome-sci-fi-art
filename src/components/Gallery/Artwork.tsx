@@ -10,7 +10,7 @@ interface ArtworkProps {
 
 const Artwork: FunctionComponent<ArtworkProps> = (props) => {
   return (
-    <figure className='column__item'>
+    <figure className='gall-item'>
             
               <div className='overlay'>
                 {/* Description */}
@@ -25,10 +25,7 @@ const Artwork: FunctionComponent<ArtworkProps> = (props) => {
                   <p>{props.year}</p>
                 </figcaption>
               </div>
-              <img src={props.pathImg} alt={props.title} />
-            
-
-              
+              <img src={props.pathImg} alt={props.title} />              
     </figure>
   )
 }

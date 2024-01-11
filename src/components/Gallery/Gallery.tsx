@@ -6,11 +6,11 @@ import { useTheme } from "../../contexts/ThemeContext";
 
 const Gallery: FunctionComponent = () => {
   // Make the columns
-  const columnSize = Math.ceil(data.length / 3);
+  const columnSize = Math.ceil(data.length / 4);
   const columns = [
     data.slice(0, columnSize),
     data.slice(columnSize, columnSize * 2),
-    data.slice(columnSize * 2),
+    data.slice(columnSize * 2, columnSize * 3),
   ];
 
 
@@ -21,9 +21,9 @@ const Gallery: FunctionComponent = () => {
     const col = document.getElementsByClassName('column__rail') as HTMLCollectionOf<HTMLElement>;
     
     for(let i = 0; i < col.length; i++){
-      if(i % 2 === 0){
+      if (i % 2 === 0) {
         col[i].style.bottom = scrollPos+"px";
-      }else{
+      } else {
         col[i].style.top = scrollPos+"px";
       }
     }

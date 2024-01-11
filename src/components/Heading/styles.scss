@@ -30,7 +30,7 @@ header {
 
   &__drop {
     overflow: hidden;
-    width: 600px;
+    width: 50vw;
   }
 
   &.dark {
@@ -45,6 +45,7 @@ header {
     font-style: italic;
     font-size: 1.25rem;
     margin: 1rem 2rem;
+    height: fit-content;
   } 
 
   &.expand {
@@ -71,7 +72,7 @@ header {
     }
     100% {
       transform: translateY(0);
-      height: 60vh;
+      height: 62vh;
       width: 100%;
       padding: 2rem;
       border-radius: 0 0 6px 6px;
@@ -81,7 +82,7 @@ header {
   @keyframes expandOff {
     0% {
       transform: translateY(0);
-      height: 60vh;
+      height: 62vh;
       width: 100%;
       padding: 2rem;
       border-radius: 0 0 6px 6px;
@@ -133,7 +134,7 @@ h1 {
   }
 }
 
-@media (min-width: 769px) and (max-width: 982px) {
+@media (min-width: 769px) and (max-width: 980px) {
   header {
     left: 15vw;
     width: 70vw;
