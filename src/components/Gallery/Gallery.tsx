@@ -3,6 +3,7 @@ import Artwork from "./Artwork";
 import data from "../../data/gallerydata.json";
 import "./styles.scss";
 import { useTheme } from "../../contexts/ThemeContext";
+import ImgModal from "../ImgModal/ImgModal";
 
 const Gallery: FunctionComponent = () => {
   // Make the columns
@@ -12,7 +13,6 @@ const Gallery: FunctionComponent = () => {
     data.slice(columnSize, columnSize * 2),
     data.slice(columnSize * 2, columnSize * 3),
   ];
-
 
   // Theme
   const { theme } = useTheme();
@@ -36,7 +36,6 @@ const Gallery: FunctionComponent = () => {
   }
 
   useEffect(() => {
-
     window.addEventListener('scroll', handleScroll);
   
     return () => {
@@ -51,18 +50,16 @@ const Gallery: FunctionComponent = () => {
           <div
             className="column"
             key={index}
-            
           >
             <div className="column__rail">
               {column.map((img) => (
-                
                   <Artwork {...img} key={img.id} />
-                
               ))}
             </div>
           </div>
         ))}
     </div>
+    <ImgModal />
     </>
   );
 };

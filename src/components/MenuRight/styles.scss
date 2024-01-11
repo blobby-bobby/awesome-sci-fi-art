@@ -3,23 +3,30 @@
 .menu-right {
     position: fixed;
     z-index: 5;
-    width: 100vw;
+    width: 100dvw;
     height: 100vh;
     background-color: rgba(5, 5, 5, 0.8);
     display: flex;
     justify-content: end;
-    // opacity: 1;
-    // transition: opacity .3s ease;
 
     &__container {
-        width: 60vw;
+        width: 50vw;
         overflow-y: scroll;
         overflow-x: hidden;
         padding: 6rem 2rem;
 
+        h2 {
+            text-transform: uppercase;
+        }
+
         p {
             font-style: italic;
+            font-size: 3rem;
             margin-bottom: 2rem
+        }
+
+        form, input, label, textarea {
+            width: 100%;  
         }
     }
 
@@ -29,5 +36,18 @@
     
     .light {
         @include light-theme;
+    }
+
+    button {
+        background-color: var(--grey800);
+        border-radius: 30px;
+        border: none;
+        padding: 1.2rem 2rem;
+    }
+}
+
+@media (max-width: 980px) {
+    .menu-right__container {
+        width: 100dvw;
     }
 }
