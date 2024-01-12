@@ -1,4 +1,4 @@
-import Gallery from "./components/Gallery/Gallery"
+import { Gallery } from "./components/Gallery/Gallery"
 import Heading from "./components/Heading/Heading"
 import { HiOutlineSun, HiOutlineInformationCircle, HiOutlineSparkles, HiOutlineX } from "react-icons/hi";
 import { FaTwitter, FaLinkedin } from "react-icons/fa";
@@ -33,8 +33,10 @@ function App() {
         
         {/* Share button */}
         <div className={`nav-block ${theme} bottom share`}>Share: 
-          <a href="https://github.com/blobby-bobby" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
-          <a href="https://github.com/blobby-bobby" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//sticker-wall.vercel.app/" 
+                target='_blank' rel="noopener noreferrer"><FaTwitter /></a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//sticker-wall.vercel.app/" 
+                target='_blank' rel="noopener noreferrer"><FaLinkedin /></a>
         </div>
 
         {/* Author button */}

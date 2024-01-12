@@ -1,11 +1,12 @@
-import { FunctionComponent, useEffect } from "react";
-import Artwork from "./Artwork";
+import { FunctionComponent, useEffect, useState } from "react";
+import { GalleryItem } from "./GalleryItem";
 import data from "../../data/gallerydata.json";
 import "./styles.scss";
 import { useTheme } from "../../contexts/ThemeContext";
-// import ImgModal from "../ImgModal/ImgModal";
+import { Artwork } from "../../types/types";
+import { ImgModal } from "../ImgModal/ImgModal";
 
-const Gallery: FunctionComponent = () => {
+export const Gallery: FunctionComponent = () => {
   // Make the columns
   const columnSize = Math.ceil(data.length / 4);
   const columns = [
@@ -17,6 +18,7 @@ const Gallery: FunctionComponent = () => {
   // Theme
   const { theme } = useTheme();
 
+  // Scroll effect
   const updatePositions = (scrollPos:number)=>{
     const col = document.getElementsByClassName('column__rail') as HTMLCollectionOf<HTMLElement>;
     
@@ -43,6 +45,21 @@ const Gallery: FunctionComponent = () => {
     }
   }, [])
 
+  // Modal
+  const [selectedArtwork, setSelectedArtwork] = useState<Artwork>({author: "", id: 0, pathAuthor: "", pathImg: "", tags: [], title:"", year:""})
+  const [isOpenModal, setIsOpenedModal] = useState<boolean>(false)
+
+  const handleOpenModal = (artworkData: any) => {
+    setSelectedArtwork(artworkData);
+    setIsOpenedModal(true);
+  }
+
+  const handleCloseModal = () => {
+    setSelectedArtwork({author: "", id: 0, pathAuthor: "", pathImg: "", tags: [], title:"", year:""});
+    setIsOpenedModal(false);
+  };
+
+
   return (
     <>
     <div className={`columns ${theme}`}>
@@ -53,15 +70,13 @@ const Gallery: FunctionComponent = () => {
           >
             <div className="column__rail">
               {column.map((img) => (
-                  <Artwork {...img} key={img.id} />
+                  <GalleryItem {...img} key={img.id} onClick={() => handleOpenModal(img)} />
               ))}
             </div>
           </div>
         ))}
     </div>
-    {/* <ImgModal /> */}
+    {selectedArtwork && isOpenModal && <ImgModal artwork={selectedArtwork} onClose={handleCloseModal} />}
     </>
   );
 };
-
-export default Gallery;
