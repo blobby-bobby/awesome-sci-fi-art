@@ -3,7 +3,7 @@ import Artwork from "./Artwork";
 import data from "../../data/gallerydata.json";
 import "./styles.scss";
 import { useTheme } from "../../contexts/ThemeContext";
-import ImgModal from "../ImgModal/ImgModal";
+// import ImgModal from "../ImgModal/ImgModal";
 
 const Gallery: FunctionComponent = () => {
   // Make the columns
@@ -59,7 +59,7 @@ const Gallery: FunctionComponent = () => {
           </div>
         ))}
     </div>
-    <ImgModal />
+    {/* <ImgModal /> */}
     </>
   );
 };
