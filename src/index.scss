@@ -11,6 +11,7 @@
   -moz-osx-font-smoothing: grayscale;
   --grey900: #1F1F1F;
   --grey800: #323232;
+  --grey700: #575757;
   --cream100: #FFF7E9;
   --green500: #5EEE51;
 }
@@ -30,6 +31,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  // border: 1px solid red;
 }
 
 body {
@@ -45,7 +47,7 @@ body {
   height: 50px;
   padding: 0.6em 1em;
   cursor: pointer;
-  box-shadow: 0 11px 30px rgba(31,31,31,.5);
+  box-shadow: 4px 4px 6px rgba(36,36,36,.3);
 }
 
 .nav-block {
@@ -80,8 +82,8 @@ body {
 
 a {
   font-weight: 700;
-  text-decoration: underline;
-  color: var(--cream100);
+  text-decoration: none;
+  color: inherit;
 }
 
 .share a {
@@ -89,7 +91,8 @@ a {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    background-color: #323232;
+    color: var(--cream100);
+    background-color: var(--grey800);
     border-radius: 15px;
     width: 30px;
     height: 30px;
@@ -106,6 +109,21 @@ h2 {
   margin: 2rem 0;
 }
 
+// Scrollbar
+body::-webkit-scrollbar {
+  width: 6px;
+  cursor: pointer;
+}
+body::-webkit-scrollbar-track {
+  background: transparent;        /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--green500);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid var(--green500);  /* creates padding around scroll thumb */
+}
+
+// Responsive
 @media (max-width: 576px) {
   .nav-block {
     margin: 2rem 1rem;

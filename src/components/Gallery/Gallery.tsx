@@ -1,5 +1,5 @@
 import { FunctionComponent, useEffect, useState } from "react";
-import { GalleryItem } from "./GalleryItem";
+import { GalleryItem } from "../GalleryItem/GalleryItem";
 import data from "../../data/gallerydata.json";
 import "./styles.scss";
 import { useTheme } from "../../contexts/ThemeContext";
@@ -68,7 +68,7 @@ export const Gallery: FunctionComponent = () => {
             className="column"
             key={index}
           >
-            <div className="column__rail">
+            <div className={`column__rail ${index % 2 === 1 ? "reversed" : ""}`}>
               {column.map((img) => (
                   <GalleryItem {...img} key={img.id} onClick={() => handleOpenModal(img)} />
               ))}
