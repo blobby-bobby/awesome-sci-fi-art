@@ -3,7 +3,7 @@ import { useTheme } from '../../contexts/ThemeContext';
 import { useState } from 'react';
 import logoTemp from "../../assets/favicon.png"
 
-const Heading = () => {
+export const Heading = () => {
 
   const { theme } = useTheme();
   const [expand, isExpanded] = useState<boolean>(false)
@@ -23,5 +23,3 @@ const Heading = () => {
         </header>
   )
 }
-
-export default Heading

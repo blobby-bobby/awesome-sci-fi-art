@@ -1,10 +1,11 @@
 import { Gallery } from "./components/Gallery/Gallery"
-import Heading from "./components/Heading/Heading"
+import { Heading } from "./components/Heading/Heading"
 import { HiOutlineSun, HiOutlineInformationCircle, HiOutlineSparkles, HiOutlineX } from "react-icons/hi";
 import { FaTwitter, FaLinkedin } from "react-icons/fa";
 import { useTheme } from "./contexts/ThemeContext";
-import MenuRight from "./components/MenuRight/MenuRight";
+import { MenuRight } from "./components/MenuRight/MenuRight";
 import { useState } from "react";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
   const { theme, setTheme } = useTheme();
@@ -29,7 +30,9 @@ function App() {
         <div className={`nav-block ${theme} right menu`} onClick={() => setIsOpenMenu(!IsOpenMenu)}>
           {IsOpenMenu ? <HiOutlineX size={24} /> : <HiOutlineInformationCircle size={24} />}
         </div>
-        {IsOpenMenu ? <MenuRight /> : ""}
+        <AnimatePresence>
+          {IsOpenMenu && <MenuRight />}
+        </AnimatePresence>
         
         {/* Share button */}
         <div className={`nav-block ${theme} bottom share`}>Share: 

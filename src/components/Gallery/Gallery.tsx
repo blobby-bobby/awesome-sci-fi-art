@@ -5,6 +5,7 @@ import "./styles.scss";
 import { useTheme } from "../../contexts/ThemeContext";
 import { Artwork } from "../../types/types";
 import { ImgModal } from "../ImgModal/ImgModal";
+import { AnimatePresence } from 'framer-motion';
 
 export const Gallery: FunctionComponent = () => {
   // Make the columns
@@ -75,8 +76,10 @@ export const Gallery: FunctionComponent = () => {
             </div>
           </div>
         ))}
-    </div>
-    {selectedArtwork && isOpenModal && <ImgModal artwork={selectedArtwork} onClose={handleCloseModal} />}
+      </div>
+      <AnimatePresence>
+        {selectedArtwork && isOpenModal && <ImgModal artwork={selectedArtwork} onClose={handleCloseModal} />}
+      </AnimatePresence>
     </>
   );
 };

@@ -1,8 +1,9 @@
 import './styles.scss'
 import { useTheme } from '../../contexts/ThemeContext';
 import { FunctionComponent } from 'react';
+import { motion } from 'framer-motion';
 
-const MenuRight: FunctionComponent = () => {
+export const MenuRight: FunctionComponent = () => {
 
   const { theme } = useTheme();
 
@@ -16,25 +17,30 @@ const MenuRight: FunctionComponent = () => {
       });
   };
 
+  // Animation
+  const menuBarVars = {
+    initial: { x: '100%', opacity: 1 },
+    animate: { x: 0, opacity: 1, transition: { delay: 0.2, duration: 0.4, ease: [0.12, 0, 0.39, 0]}},
+    exit: { x: '100%', opacity: 0, transition: { duration: 0.4, ease: [0.12, 0, 0.39, 1]}}
+  }
+
+  const menuFullScreenVars = {
+    initial: { opacity: 0 },
+    animate: { opacity: 1, transition: { duration: 0.3, ease: [0.12, 0, 0.39, 0]}},
+    exit: { opacity: 0, transition: { delay: 0.3, duration: 0.3, ease: [0.12, 0, 0.39, 1]}}
+  }
+
   return (
-    <div className='menu-right'>
-      <div className={`menu-right__container ${theme}`}>
+    <motion.div className='menu-right' variants={menuFullScreenVars} initial='initial' animate='animate' exit='exit'>
+      <motion.div variants={menuBarVars} initial='initial' animate='animate' exit='exit' className={`menu-right__container ${theme}`}>
 
-        <h2>So you know...</h2>
-        <p>
-        This gallery is not for profit purpose, but to encourage discovery of unique artworks, and to strenghten frontend skills. Please, keep in mind that those pictures are probably under copyright license. If you use them on your blog, social media or whatever, don't forget to credit the authors.
-        </p>
-
-        <hr />
-        <h2>Oh... and... one more thing =)</h2>
-        <p>I curated this gallery myself, and sometimes, informations about the authors are missing. So if you see mistakes or missing informations, please don't hesitate don't hesitate to drop a mail here. Your suggestions on the artists or works to add on this gallery are also welcome.</p>
+        <h2>Hey, want to help out on this gallery ?</h2>
+        <p>I curated this gallery myself, made my own search for real and awesome art, but sometimes, informations about the authors or their works are missing. So if you see mistakes or missing informations, please don't hesitate don't hesitate to drop a mail here. Your suggestions on artists or works you would like to see on this gallery are also welcome.</p>
 
         <button onClick={handleCopyClick}>
           Copy Email
         </button>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   )
 }
-
-export default MenuRight

@@ -11,8 +11,7 @@
 
     &__container {
         width: 50vw;
-        overflow-y: scroll;
-        overflow-x: hidden;
+        overflow: hidden;
         padding: 6rem 2rem;
 
         h2 {
@@ -21,7 +20,7 @@
 
         p {
             font-style: italic;
-            font-size: 3rem;
+            font-size: 1.5rem;
             margin-bottom: 2rem
         }
 
