@@ -1,0 +1,130 @@
+@import '../../index.scss';
+
+.modal {
+    position: fixed;
+    width: 100dvw;
+    height: 100dvh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    overflow: hidden;
+    
+    &.dark {
+        @include dark-theme;
+    }
+
+    &.light {
+        @include light-theme;
+    }
+
+    &__close {
+        display: flex;
+        justify-content: flex-end;
+        width: 100dvw;
+
+        &--button {
+            @include button-style;
+            margin: 2rem;
+        }
+    }
+
+    &__container {
+        width: 80%;
+        height: -webkit-fill-available;
+        display: flex;
+        margin: auto;
+        gap: 2rem;
+
+        &--image {
+            flex: 50%;
+            width: 50%;
+            position: relative;
+            align-items: center;
+            height: 90%;
+            transform: rotate(-8deg);
+            display: flex;
+            justify-content: center;
+
+            img {    
+                height: fit-content;
+                object-fit: contain;
+                max-height: 800px;
+                border-radius: 6px;
+                overflow: hidden;
+                box-shadow: 10px 5px var(--green500);
+            }
+        }
+
+        &--text {
+            width: 50%;
+            margin: auto;
+            height: 80%;
+
+            h2 {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+.infos__block {
+    margin-bottom: 2rem;
+    display: flex;
+
+    span {
+        color: var(--grey700);
+        min-width: 80px;
+    }
+
+    .year {
+        font-style: italic;
+        font-weight: 700;
+    }
+
+    .link {
+        display: flex;
+        align-items: center;
+        gap: .4rem;
+        transition: all .5s ease;
+        position: relative;
+        
+        .underline {
+            background-color: var(--green500);
+            width: 0%;
+            position: absolute;
+            height: 8px;
+            bottom: 0;
+            left: -2px;
+            opacity: .5;
+            transition: all .35s ease;
+            z-index: -1;
+        }
+
+        &:hover .underline {
+            width: 100%;
+        }
+    }
+}
+
+.tags {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    span {
+        background-color: var(--grey800);
+        border-radius: 20px;
+        padding: .6rem 1.4rem;
+        display: inline-block;
+        width: fit-content;
+        color: var(--cream100);
+        cursor: pointer;
+        transition: all .4s ease;
+
+        &:hover {
+            background-color: var(--grey700);
+        }
+    }
+}
