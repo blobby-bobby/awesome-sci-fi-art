@@ -1,17 +1,25 @@
 import './styles.scss'
 import { useTheme } from '../../contexts/ThemeContext';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import logoTemp from "../../assets/favicon.png"
 
 export const Heading = () => {
 
   const { theme } = useTheme();
-  const [expand, isExpanded] = useState<boolean>(false)
+  const [expanded, setIsExpanded] = useState<boolean>(true)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY !== 0) setIsExpanded(false);
+    }
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   return (
         <header>
           
-          <div className={`head-block ${theme} ${expand ? "expand" : "collapse"}`} onClick={() => isExpanded(!expand)}>
+          <div className={`head-block ${theme} ${expanded ? "expand" : "collapse"}`} onClick={() => setIsExpanded(!expanded)}>
 
               <img src={logoTemp} height={30} alt="Awesome Scifi Art" className='head-block__icon' />
 

@@ -22,6 +22,7 @@ export const ImgModal: FunctionComponent<ImgModalProps> = (props) => {
     exit: { y: '-100%', opacity: 1, transition: { delay: 0.8, duration: 0.4, ease: [0.4, 0, 0.1, 0]}}
   }
 
+  // Image transition
   const imgVars = {
     initial: { x: '-40%', opacity: 0, rotate: -20 },
     animate: { x: '0%', opacity: 1, rotate: -6, transition: { duration: 0.5, delay: 0.3, ease: [0.4, 0, 0.1, 0] }},

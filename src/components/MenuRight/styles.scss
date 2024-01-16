@@ -2,7 +2,7 @@
 
 .menu-right {
     position: fixed;
-    z-index: 5;
+    z-index: 4;
     width: 100dvw;
     height: 100vh;
     background-color: rgba(5, 5, 5, 0.8);
@@ -11,8 +11,13 @@
 
     &__container {
         width: 50vw;
+        height: 100dvh;
         overflow: hidden;
         padding: 6rem 2rem;
+        position: fixed;
+        background-color: var(--grey900);
+        z-index: 5;
+        right: 0;
 
         h2 {
             text-transform: uppercase;

@@ -14,7 +14,8 @@ function App() {
     setTheme((curr) => (curr === 'dark' ? 'light' : 'dark'));
   };
 
-  const [IsOpenMenu, setIsOpenMenu] = useState<boolean>(false)
+  const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false)
+  const closeMenu = () => { setIsOpenMenu(false) }
 
   return (
       <>
@@ -27,11 +28,11 @@ function App() {
         <Heading />
 
         {/* Menu button */}
-        <div className={`nav-block ${theme} right menu`} onClick={() => setIsOpenMenu(!IsOpenMenu)}>
-          {IsOpenMenu ? <HiOutlineX size={24} /> : <HiOutlineInformationCircle size={24} />}
+        <div className={`nav-block ${theme} right menu`} onClick={() => setIsOpenMenu(!isOpenMenu)}>
+          {isOpenMenu ? <HiOutlineX size={24} /> : <HiOutlineInformationCircle size={24} />}
         </div>
         <AnimatePresence>
-          {IsOpenMenu && <MenuRight />}
+          {isOpenMenu && <MenuRight isOpen={isOpenMenu} onClose={closeMenu} />}
         </AnimatePresence>
         
         {/* Share button */}
