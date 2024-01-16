@@ -5,7 +5,6 @@ import './styles.scss'
 interface LinkProps {
     linkPath: string,
     linkTitle: string,
-    onClick: () => void,
 }
 
 export const Link: FunctionComponent<LinkProps> = (props) => {

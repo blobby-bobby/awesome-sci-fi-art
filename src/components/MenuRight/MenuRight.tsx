@@ -51,7 +51,10 @@ export const MenuRight: FunctionComponent<menuRightProps> = (props) => {
       <h2>Hey, want to help out on this gallery ?</h2>
       <p className='menu-right__container--text'>I curated this gallery myself, made my own search for real and awesome art, but sometimes, informations about the authors or their works are missing. So if you see mistakes or missing informations, please don't hesitate don't hesitate to drop a mail on the link below. Your suggestions on artists or works you would like to see on this gallery are also welcome.</p>
 
-      <Link linkPath='awesomescifigallery@gmail.com' linkTitle='Send a mail' onClick={handleCopyClick} />
+      <div onClick={handleCopyClick}>
+        <Link linkPath='mailto:awesomescifigallery@gmail.com' linkTitle='Send a mail' />
+      </div>
+      
     </motion.div>
     </>
   )

@@ -37,9 +37,9 @@ function App() {
         
         {/* Share button */}
         <div className={`nav-block ${theme} bottom share`}>Share: 
-          <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//sticker-wall.vercel.app/" 
+          <a href="https://www.facebook.com/sharer/sharer.php?u=<URL>" 
                 target='_blank' rel="noopener noreferrer"><FaTwitter /></a>
-          <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//sticker-wall.vercel.app/" 
+          <a href="https://twitter.com/share?url=<URL>" 
                 target='_blank' rel="noopener noreferrer"><FaLinkedin /></a>
         </div>
 
