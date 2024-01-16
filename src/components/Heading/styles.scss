@@ -72,7 +72,7 @@ header {
     }
     100% {
       transform: translateY(0);
-      height: 62vh;
+      height: 32rem;
       width: 100%;
       padding: 2rem;
       border-radius: 0 0 6px 6px;
@@ -82,7 +82,7 @@ header {
   @keyframes expandOff {
     0% {
       transform: translateY(0);
-      height: 62vh;
+      height: 32rem;
       width: 100%;
       padding: 2rem;
       border-radius: 0 0 6px 6px;
@@ -105,7 +105,7 @@ header {
 
 
 h1 {
-  font-size: 5vw;
+  font-size: 7vw;
   line-height: 1;
   font-style: italic;
   font-weight: 700;
@@ -123,7 +123,16 @@ h1 {
     width: 100%;
   }
 
+  h1 {
+    font-size: 3rem;
+  }
+
   .head-block {
+    p {
+      font-size: 1.15rem;
+      margin: 0;
+    }
+
     &__drop {
       width: 100%;
     }
