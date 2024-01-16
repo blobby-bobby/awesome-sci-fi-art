@@ -37,11 +37,16 @@
               text-transform: uppercase;
           }
       }
-  
         img {
-            transition: all .35s ease;
-            width: 100%;
-        }
+          transition: all .2s ease;
+          width: 100%;
+          height: 100%;
+          background-color: var(--grey700);
+
+          &.loading {
+            filter: blur(3px);
+          }
+      }
     
       &:hover {
           transform: scale(.97);

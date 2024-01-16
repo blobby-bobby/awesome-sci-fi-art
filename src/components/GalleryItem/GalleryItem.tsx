@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react'
+import { FunctionComponent, useState } from 'react'
 import "./styles.scss"
 
 interface ArtworkProps {
@@ -10,25 +10,38 @@ interface ArtworkProps {
   pathAuthor: string;
   tags: string[];
   onClick: () => void;
+  onLoad: (id: number) => void;
 }
 
 export const GalleryItem: FunctionComponent<ArtworkProps> = (props) => {
-  return (
-    <figure className='gall-item' onClick={props.onClick}>
-              <div className='overlay'>
-                {/* Description */}
-                <figcaption>
-                  <div>
-                    <p>{props.title}</p>
-                    <address className="author">{props.author}</address>
-                  
-                {/* MORE BUTTON */}
-                  </div>
 
-                  <p>{props.year}</p>
-                </figcaption>
-              </div>
-              <img src={props.pathImg} alt={props.title} />              
-    </figure>
+  const [imageLoaded, setImageLoaded] = useState<boolean>(false);
+
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+    props.onLoad(props.id);
+  };
+
+  return (
+      <figure className='gall-item' onClick={props.onClick}>
+        <div className='overlay'>
+          {/* Description */}
+          <figcaption>
+            <div>
+              <p>{props.title}</p>
+              <address className="author">{props.author}</address>
+            </div>
+
+            <p>{props.year}</p>
+          </figcaption>
+        </div>
+        <img 
+          className={`${imageLoaded ? '' : 'loading'}`}
+          src={props.pathImg} 
+          alt={props.title}
+          onLoad={handleImageLoad}
+          width="300" height="300"
+        />
+      </figure>
   )
 }

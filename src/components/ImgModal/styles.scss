@@ -54,6 +54,7 @@
                 border-radius: 6px;
                 overflow: hidden;
                 box-shadow: 10px 5px var(--green500);
+                background-color: var(--grey700);
             }
         }
 
@@ -102,5 +103,29 @@
         &:hover {
             background-color: var(--grey700);
         }
+    }
+}
+
+@media (max-width: 576px) {
+    .modal__container {
+        flex-wrap: wrap;
+
+        &--image {
+            width: 100%;
+            height: fit-content;
+            margin-top: 0;
+        }
+
+        &--text {
+            width: 100%;
+
+            h2 {
+                font-size: 2.2rem;
+            }
+        }
+    }
+
+    .infos__block {
+        margin-bottom: 1rem;
     }
 }

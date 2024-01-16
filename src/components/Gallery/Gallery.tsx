@@ -47,7 +47,7 @@ export const Gallery: FunctionComponent = () => {
   }, [])
 
   // Modal
-  const [selectedArtwork, setSelectedArtwork] = useState<Artwork>({author: "", id: 0, pathAuthor: "", pathImg: "", tags: [], title:"", year:""})
+  const [selectedArtwork, setSelectedArtwork] = useState<Artwork>({author:"", id: 0, pathAuthor:"", pathImg:"", tags:[], title:"", year:""})
   const [isOpenModal, setIsOpenedModal] = useState<boolean>(false)
 
   const handleOpenModal = (artworkData: any) => {
@@ -56,10 +56,14 @@ export const Gallery: FunctionComponent = () => {
   }
 
   const handleCloseModal = () => {
-    setSelectedArtwork({author: "", id: 0, pathAuthor: "", pathImg: "", tags: [], title:"", year:""});
+    setSelectedArtwork({author: "", id: 0, pathAuthor:"", pathImg:"", tags:[], title:"", year:""});
     setIsOpenedModal(false);
   };
 
+  const handleLazyLoad = (id: number) => {
+    console.log("Image chargée :", id);
+    // Peut-être ajoutez ici un traitement supplémentaire si nécessaire
+  };
 
   return (
     <>
@@ -71,7 +75,11 @@ export const Gallery: FunctionComponent = () => {
           >
             <div className={`column__rail ${index % 2 === 1 ? "reversed" : ""}`}>
               {column.map((img) => (
-                  <GalleryItem {...img} key={img.id} onClick={() => handleOpenModal(img)} />
+                  <GalleryItem 
+                    {...img} key={img.id} 
+                    onClick={() => handleOpenModal(img)} 
+                    onLoad={handleLazyLoad}
+                    />
               ))}
             </div>
           </div>
