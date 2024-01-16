@@ -82,30 +82,6 @@
         font-style: italic;
         font-weight: 700;
     }
-
-    .link {
-        display: flex;
-        align-items: center;
-        gap: .4rem;
-        transition: all .5s ease;
-        position: relative;
-        
-        .underline {
-            background-color: var(--green500);
-            width: 0%;
-            position: absolute;
-            height: 8px;
-            bottom: 0;
-            left: -2px;
-            opacity: .5;
-            transition: all .35s ease;
-            z-index: -1;
-        }
-
-        &:hover .underline {
-            width: 100%;
-        }
-    }
 }
 
 .tags {

@@ -15,17 +15,25 @@
         overflow: hidden;
         padding: 6rem 2rem;
         position: fixed;
-        background-color: var(--grey900);
         z-index: 5;
         right: 0;
+        font-size: 1.5rem;
+
+        &.dark {
+            @include dark-theme;
+        }
+
+        &.light {
+            @include light-theme;
+        }
+
 
         h2 {
             text-transform: uppercase;
         }
 
-        p {
+        &--text {
             font-style: italic;
-            font-size: 1.5rem;
             margin-bottom: 2rem
         }
 

@@ -2,9 +2,9 @@ import { FunctionComponent } from 'react';
 import { useTheme } from '../../contexts/ThemeContext';
 import './styles.scss';
 import { Artwork } from '../../types/types';
-import { HiMiniArrowUpRight } from "react-icons/hi2";
 import { HiOutlineX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
+import { Link } from '../Link/Link';
 
 interface ImgModalProps {
   artwork: Artwork;
@@ -56,10 +56,7 @@ export const ImgModal: FunctionComponent<ImgModalProps> = (props) => {
                   <motion.h2 variants={textsVars}>{props.artwork.title}</motion.h2>
                     <motion.div className='infos__block' variants={textsVars}>
                       <span>Author</span>
-                        <a href={props.artwork.pathAuthor} className='link' target="_blank" rel="noopener noreferrer">
-                            <p>{props.artwork.author}</p> <HiMiniArrowUpRight size={20} />
-                            <div className='underline'></div>
-                        </a>
+                      <Link linkPath={props.artwork.pathAuthor} linkTitle={props.artwork.author} />
                     </motion.div>
 
                     <motion.div className='infos__block' variants={textsVars}>

@@ -1,0 +1,29 @@
+.link {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    transition: all .5s ease;
+    position: relative;
+    width: fit-content;
+    font-size: inherit;
+
+    p {
+        margin: 0;
+    }
+    
+    .underline {
+        background-color: var(--green500);
+        width: 0%;
+        position: absolute;
+        height: 40%;
+        bottom: 2px;
+        left: -2px;
+        opacity: .5;
+        transition: all .35s ease;
+        z-index: -1;
+    }
+
+    &:hover .underline {
+        width: 100%;
+    }
+}
