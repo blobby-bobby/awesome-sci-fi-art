@@ -8,10 +8,11 @@ export const Heading = () => {
   const { theme } = useTheme();
   const [expanded, setIsExpanded] = useState<boolean>(true)
 
+  const handleScroll = () => {
+    if (window.scrollY !== 0) setIsExpanded(false);
+  }
+
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY !== 0) setIsExpanded(false);
-    }
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])

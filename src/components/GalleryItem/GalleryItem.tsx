@@ -1,14 +1,9 @@
 import { FunctionComponent, useState } from 'react'
 import "./styles.scss"
+import { Artwork } from '../../types/types';
 
 interface ArtworkProps {
-  id: number;
-  title: string;
-  author: string;
-  year: string;
-  pathImg: string;
-  pathAuthor: string;
-  tags: string[];
+  artwork: Artwork;
   onClick: () => void;
   onLoad: (id: number) => void;
 }
@@ -19,7 +14,7 @@ export const GalleryItem: FunctionComponent<ArtworkProps> = (props) => {
 
   const handleImageLoad = () => {
     setImageLoaded(true);
-    props.onLoad(props.id);
+    props.onLoad(props.artwork.id);
   };
 
   return (
@@ -28,17 +23,17 @@ export const GalleryItem: FunctionComponent<ArtworkProps> = (props) => {
           {/* Description */}
           <figcaption>
             <div>
-              <p>{props.title}</p>
-              <address className="author">{props.author}</address>
+              <p>{props.artwork.title}</p>
+              <address className="author">{props.artwork.author}</address>
             </div>
 
-            <p>{props.year}</p>
+            <p>{props.artwork.year}</p>
           </figcaption>
         </div>
         <img 
           className={`${imageLoaded ? '' : 'loading'}`}
-          src={props.pathImg} 
-          alt={props.title}
+          src={props.artwork.pathImg} 
+          alt={props.artwork.title}
           onLoad={handleImageLoad}
           width="300" height="300"
         />

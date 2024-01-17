@@ -1,17 +1,22 @@
-import { FunctionComponent } from "react"
+import { FunctionComponent } from "react";
 import { HiMiniArrowUpRight } from "react-icons/hi2";
-import './styles.scss'
+import "./styles.scss";
 
 interface LinkProps {
-    linkPath: string,
-    linkTitle: string,
+  linkPath: string;
+  linkTitle: string;
 }
 
 export const Link: FunctionComponent<LinkProps> = (props) => {
   return (
-    <a href={props.linkPath} className='link' target="_blank" rel="noopener noreferrer">
-    <p>{props.linkTitle}</p> <HiMiniArrowUpRight size={20} />
-    <div className='underline'></div>
+    <a
+      href={props.linkPath}
+      className="link"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <p>{props.linkTitle}</p> <HiMiniArrowUpRight size={20} />
+      <div className="underline"></div>
     </a>
-  )
-}
+  );
+};

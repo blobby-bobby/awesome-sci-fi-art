@@ -75,8 +75,8 @@ export const Gallery: FunctionComponent = () => {
           >
             <div className={`column__rail ${index % 2 === 1 ? "reversed" : ""}`}>
               {column.map((img) => (
-                  <GalleryItem 
-                    {...img} key={img.id} 
+                  <GalleryItem artwork={img}
+                    key={img.id} 
                     onClick={() => handleOpenModal(img)} 
                     onLoad={handleLazyLoad}
                     />
