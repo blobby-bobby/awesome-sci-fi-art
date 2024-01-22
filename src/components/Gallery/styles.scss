@@ -39,8 +39,12 @@
     height: 3300px;
     animation: Yslide 20s infinite linear;
 
-    &.reversed {
+    &.odd {
       animation: YslideReversed 20s infinite linear;
+    }
+
+    &.even {
+      bottom: 0;
     }
   }
 }
@@ -98,8 +102,8 @@
         margin: 0;
         animation: none;
 
-        &.reversed {
-          animation: noen;
+        &.odd {
+          animation: none;
         }
       }
       &:nth-child(2) {

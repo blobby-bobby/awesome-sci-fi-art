@@ -73,7 +73,7 @@ export const Gallery: FunctionComponent = () => {
             className="column"
             key={index}
           >
-            <div className={`column__rail ${index % 2 === 1 ? "reversed" : ""}`}>
+            <div className={`column__rail ${index % 2 === 1 ? "odd" : "even"}`}>
               {column.map((img) => (
                   <GalleryItem artwork={img}
                     key={img.id} 
